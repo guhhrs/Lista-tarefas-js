@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="animista.css">
 </head>
 
 <body>
+
+    <div class="card">
     <main id="app--core">
         <header id="todo--header">
-            <h1>Tod-o-tron Fury 9000</h1>
+            <h1 class="entrada--texto">Tarefas do Gusta</h1>
         </header>
         <form id="todo--form">
             <input type="text" name="criar--tarefa" id="criar--tarefa" placeholder="Crie uma tarefa...">
             <button type="submit" id="add--tarefa" class="add--tarefa"> + </button>
+            
         </form>
         <section id="tarefas">
-            <article class="tarefa--item">
-                <input type="checkbox" class="tarefa--check" name="concluido">
-                <h2 class="tarefa--titulo">Dummy Task</h2>
-            </article>
         </section>
         <footer id="todo--footer">
             <span class="counter">Tudo Feito!</span>
@@ -36,6 +39,10 @@
             <button class="btn--filtro" id="limpar">Limpar concluídas</button>
         </footer>
     </main>
+</div>
+
+
+    <div id="imagem"></div>
 </body>
 
 </html>

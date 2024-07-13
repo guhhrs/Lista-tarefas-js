@@ -12,10 +12,18 @@ body {
     place-items: center;
     height: 100vh;
     font-size: var(--font-body);
+    font-family: "Orbitron", sans-serif;
+    
+    background-image: url(img--fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center; 
 }
 
 .grad--text {
-    background: linear-gradient(181deg, #020824 39.21%, #432399 57.24%, #973691 73.26%, #FF9EA8 94.09%);
+    background: linear-gradient(181deg, #ffffff 39.21%, #432399 57.24%, #973691 73.26%, #FF9EA8 94.09%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,14 +45,17 @@ body {
     flex: 0 0;
     height: 4rem;
     padding: var(--padding-y) var(--padding-x);
+    width: 500px;
 }
 
 #todo--form {
     display: flex;
     gap: var(--gap);
     border-radius: .875rem;
-    border: 2px solid purple;
+    border: 2px solid rgb(255, 255, 255);
     margin-bottom: 1.5rem;
+    box-shadow: #fcfcfc 1px 1px 19px 1px ;
+   
 }
 
 #tarefas {
@@ -59,7 +70,7 @@ body {
     border-bottom: 2px solid hsla(235, 14%, 26%, 0.3);
 }
 
-.concluida {
+.concluida h2{
     text-decoration: line-through;
 }
 
@@ -78,6 +89,9 @@ body {
     font: inherit;
     width: 100%;
     border: none;
+    background: transparent;
+    color: white;
+    
 }
 
 #todo--footer {
@@ -90,4 +104,46 @@ body {
     border: none;
     background: none;
     font: inherit;
+    color: white;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#imagem{
+    width: 300px;
+    background-color: #00ec85;
+    cursor: default;
+} 
+.card {
+    width: 550px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: white 1px 1px 19px 1px;
+    background-color: rgba(0, 0, 0, 0.432);
+    filter: blur(20);
+    margin-top: 160px;
+}
+
+article{
+    display: flex;
+    padding: 10px;
+    
+}
+
+h2{
+    padding: 12px;
+}
+
+.tarefa--check{
+    margin-top: 18px;
+}
+
+i{
+    color: black;
+} 
+
+button{
+    background-color: lightpink;
+    border-radius: 5px;
 }
